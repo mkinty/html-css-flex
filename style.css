@@ -1,0 +1,105 @@
+/* reset */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* general */
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+h1,
+h1,
+h3,
+h4 {
+  font-weight: 700px;
+}
+
+/* container */
+
+.container {
+  display: flex;
+  background: #444;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  background: #081a1f;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  min-height: 50px;
+}
+
+.header h1 {
+  justify-content: flex-start;
+}
+
+.header h1 a {
+  color: white;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header ul li {
+  margin-right: 40px;
+  list-style: none;
+}
+
+.header ul li a {
+  color: white;
+}
+
+/* body */
+
+.body {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+  align-items: stretch;
+  background: #555;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  background: #999;
+  flex: 0 0 200px;
+}
+
+.aside span {
+  margin: 0.5rem;
+  flex-basis: 50px;
+  background: #fefefe;
+}
+
+.article {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 0.2rem;
+  flex: auto;
+}
+
+.article div {
+  flex-basis: 200px;
+  background: #ccc;
+  height: 200px;
+  margin: 2rem;
+}
